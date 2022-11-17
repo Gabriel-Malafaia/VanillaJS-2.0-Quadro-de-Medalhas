@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Medalhas</title>
+    <link rel="shortcut icon" href="./src/img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script defer type="module" src="./src/js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./src/img/Logo.png" alt="Logo com os arcos das olimpiadas">
+    </header>
+
+    <main id="main">
+        <div class="container__subHeader">
+            <form action="#" class="subHeader__form">
+                <label for="input__pesquisa">Pesquisa</label>
+                <div class="container__pesquisa">
+                    <input id="input__pesquisa" type="text" placeholder="Pesquisa por país">
+                    <button>Pesquisar</button>
+                    <p>Ex: Brasil</p>
+                </div>
+                <span>Ex: Brasil</span>
+            </form>
+        </div>
+
+        <div class="container__table">
+            <div class="table__header">
+                <div class="table__button blue">
+                    <h2>Posição <i id="sorterPosition"  class="fa-solid fa-arrow-down-short-wide"></i></h2>
+                </div>
+                <div class="table__country blue">
+                    <h3>País</h3>
+                </div>
+                <div class="table__button blue">
+                    <h2>Ouro <i id="sorterGold" class="fa-solid fa-arrow-down-short-wide"></i></h2>
+                </div>
+                <div class="table__button blue">
+                    <h2>Prata <i id="sorterSilver" class="fa-solid fa-arrow-down-short-wide"></i></h2>
+                </div>
+                <div class="table__button blue">
+                    <h2>Bronze <i id="sorterBronze" class="fa-solid fa-arrow-down-short-wide"></i></h2>
+                </div>
+                <div class="table__normal blue">
+                    <h3>Total</h3>
+                </div>
+            </div>
+            <ul class="table__body--content">
+    
+            </ul>
+        </div>
+
+    </main>
+    <script src="https://kit.fontawesome.com/6eb0ccb6ec.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

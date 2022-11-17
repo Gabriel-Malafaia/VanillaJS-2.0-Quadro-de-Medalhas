@@ -1,0 +1,197 @@
+:root {
+    --highBlue: #364FC7;
+    --mediumBlue: #4058CA;
+    --lowBlue: #4A60CC;
+    --lightBlue: #939EDF;
+    --highGrey: #212529;
+    --mediumGrey: #868E96;
+    --lowGrey: #E9ECEF;
+    --lightGrey: #F8F9FA;
+    --white: #fff;
+    --whiteSmoke: #F5F5F5;
+    --greyOpacity: #868e963a;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--highBlue);
+    height: 5rem;
+}
+
+.container__subHeader {
+    background-color: var(--lowGrey);
+    height: 12rem;
+    z-index: 2000;
+}
+
+.subHeader__form {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    max-width: 1600px;
+    margin: auto;
+    height: 7rem;
+}
+
+.subHeader__form label {
+    color: var(--highGrey);
+}
+
+.container__pesquisa {
+    height: 2rem;
+    max-width: 300px;
+    width: 100%;
+}
+
+.container__pesquisa input {
+    flex: 1;
+    height: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.container__pesquisa button {
+    background-color: var(--highBlue);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--white);
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.container__pesquisa button:hover {
+    background-color: var(--lowBlue);
+}
+
+.subHeader__form span {
+    font-size: 14px;
+    color: var(--mediumGrey);
+}
+
+.container__table {
+    width: 95%;
+    position: relative;
+    top: -3.5rem;
+    left: 0;
+    max-width: 1600px;
+    margin: auto;
+    overflow-x: auto;
+}
+
+.blue {
+    background-color: var(--highBlue);
+}
+
+.table__header,
+.table__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    color: var(--white);
+}
+
+.table__header div,
+.table__body div {
+    min-width: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--greyOpacity);
+    height: 100%;
+    text-align: center;
+}
+
+.table__body div:nth-child(2),
+.table__header div:nth-child(2) {
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+}
+
+.table__country,
+.table__normal,
+.table__button {
+    flex: 1;
+}
+
+.table__button h2 {
+    width: 120px;
+    height: 30px;
+    background-color: var(--lowBlue);
+    padding: 5px;
+    text-align: center;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.table__button h2 i {
+    cursor: pointer;
+}
+
+.table__body {
+    color: var(--highGrey);
+}
+
+.table__body:nth-child(even) {
+    background-color: var(--lightGrey);
+}
+
+.table__body:nth-child(odd) {
+    background-color: var(--white);
+}
+
+.body__country {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.body__country img {
+    width: 25px;
+}
+
+.body__button h2 {
+    background: none;
+}
+
+.container__pesquisa p {
+    display: none;
+}
+
+@media(max-width: 1024px) {
+    .table__body:nth-child(even){
+        background: #fff;
+    }
+}
+
+@media (max-width: 768px) {
+    .container__pesquisa {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100vh;
+    }
+
+    .subHeader__form label,
+    .subHeader__form span {
+        display: none;
+    }
+
+    .subHeader__form button,
+    .subHeader__form input {
+        min-height: 35px;
+    }
+
+    .container__pesquisa p {
+        display: flex;
+        font-size: 14px;
+        color: #868E96;
+    }
+}
