@@ -5,6 +5,8 @@
 
 ## 💻 Tecnologias
 - Vanilla JS, (Poo) etc...
+- HTML
+- CSS
  
 ## 🔆 Algumas Funcionalidades
 - Possível verificar os lugares de cada seleção através de vários filtros e fazer buscas específicas.
